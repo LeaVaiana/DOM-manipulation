@@ -16,14 +16,75 @@
            <li class="bolded">List Item 2</li>
            <li class="bolded">List Item 2</li>
        </ul>
+
+       <p>
+            GET ELEMENTS BY ID: to select an element by ID, and save the value into a var
+            <br>
+            var tag = document.getElementById("highlight");
+            <br>
+            call the var: tag
+            <br>
+            We obtain: li id="highlight">List Item 1
+            <br>
+            this action return us a JS
+       </p>
+
+       <p>
+            GET ELEMENTS BY CLASS NAME (we obtain a "node list")
+            <br>
+            var tags = document.getElementByClassName("bolded");
+            <br>
+            call the var: tags
+            <br>
+            [li class="bolded">List Item 2</li>
+            li class="bolded">List Item 2</li>]
+       </p>
+
+       <p>
+            GET ELEMENTS BY TAG NAME (we obtain a "node list")
+            <br>
+            var tags = document.getElementByTagName("li");
+            <br>
+            call the var: tags
+            <br>
+            [li id="highlight">List Item 1</li>
+            li class="bolded">List Item 2</li>
+            li class="bolded">List Item 2</li>]
+       </p>
+
+       <p>
+            var body = document.getElementByTagName("body")[0];
+            <br>
+            call the var: body
+            <br>
+            body obtained
+       </p>
+
+       <h3>
+          Query Selector:
+       </h3>
+       <p> 
+          returns the first element that matches a given CSS style detector
+          <br>
+          var h1 = document.querySelector("h1");
+       </p>
+       <h3>
+               Query SelectorAll:
+            </h3>
+            <p> 
+               returns all elements that matches a given CSS style detector
+               <br>
+               var h1 = document.querySelectorAll("h1");
+            </p>
+
+
+
         
         <script src="" async defer></script>
     </body>
 </html>
 
-<!--to select an element by ID, and save the value into a var-->
-/* var tag = document.getElementById("highlight");
-call the var:
-tag
-<li id="highlight">List Item 1</li> */
 
+
+
+           
