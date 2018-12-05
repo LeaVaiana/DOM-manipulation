@@ -3,17 +3,11 @@
 //DOM: Document Object Model
 //to call and modify any element in HTML
 
-//to get elements:
+//to get elements with a specific ID:
 var box = document.getElementById("myBox")
+console.log(box); //it return div myBox
 
-console.log(box); //it return div
-
-var box = document.getElementById("myBox")
-
-//since the element is already selected I can change it
-// box.innerHTML // Hi, I am a box
-
-//I can modify it:
+//since the element is already selected I can modify it
 
 box.innerHTML = "A new text into the box inserted";
 box.style.background = "pink";
@@ -32,3 +26,6 @@ console.log(changeColor);
 //Query Selector, una alternativa per selezionare
 var box = document.querySelector("#myBox"); //name per il nome dell'elemento, #name for ID element, .name for class element
 
+//per selezionare tutti i div del documento:
+var allDivs = document.getElementsByTagName("div");
+console.log(allDivs)
