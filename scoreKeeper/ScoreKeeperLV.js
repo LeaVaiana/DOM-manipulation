@@ -34,6 +34,10 @@ p2button.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
+	reset();
+});
+
+function reset(){
 	p1Score = 0;								//aggiorno JS
 	p2Score = 0;
 	p1Display.textContent = 0;					//aggiorno HTML
@@ -41,9 +45,10 @@ resetButton.addEventListener("click", function(){
 	p1Display.classList.remove("winner");		//rimuovo la classe winner per togliere il colore verde
 	p2Display.classList.remove("winner");
 	gameOver = false;							// necessario per riiniziare il gioco
-})
+}
 
 numInput.addEventListener("change", function(){
 	winningScoreDisplay.textContent = this.value;
-	winningScore = Number(this.value);
-})
+	winningScore = Number(this.value); //to convert "string" value into number
+	reset();
+});
