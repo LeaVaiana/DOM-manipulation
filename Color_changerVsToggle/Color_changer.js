@@ -1,5 +1,5 @@
 var button = document.querySelector("button");
-var isPurple = false;
+var isPurple = false; //per cambiare tra due colori 
 
 /* button.addEventListener("click", function () {
     if (isPurple) {
